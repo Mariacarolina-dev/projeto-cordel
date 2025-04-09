@@ -1,0 +1,108 @@
+@charset "UTF-8"; /*Caractes especiais*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&display=swap');
+
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Passion+One:wght@400;700;900&family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;  
+}
+
+
+
+/* (*) = configuração gerais */
+* {
+    margin: 0px;
+    padding: 0px;    
+    font-family: 
+}
+
+html, body {
+    font-family: var(--font1);
+    min-height: 100vh; /*Tamanho minimo da view*/
+    background-color: darkgray; /*Cor de fundo*/
+
+}
+
+header {
+    background-color: black; /*Cor de fundo*/
+    color: white; /*cor da fonte*/
+    text-align: center; /*Centralização do texto*/
+}
+
+header > h1 {
+    font-size: 5vw;
+    font-family: var(--fonte2);
+    padding-top: 50px; /*Preenchimento - topo*/
+    font-variant: small-caps; /*Variação tamanho da fonte*/
+}
+
+header > p {
+    padding-bottom: 50px; /*preenchimento - baixo*/
+}
+
+header a, footer a {
+    color: white; /*Cor da fonte*/
+    text-decoration: none; /*Decoração no Texto - nenhum*/
+    font-weight: bolder; /*Estilo da Fonte*/
+}
+
+header a:hover, footer a:hover {
+    text-decoration: underline; /*Sublinhado no texto + hover*/
+
+}
+
+section { /*Simulação de Efeito Parallax*/
+    font-family: var(--fonte3);
+    padding-top: 10vh; /*preenchimento da View - topo*/
+    padding-bottom: 10vh; /*preenchimento da view - baixo*/
+    line-height: 2em; /*Espaçamento Entre Linhas*/
+    padding-left: 30px; /*Preenchimento limite - esquerda*/ 
+
+}
+
+section > p {
+    padding-bottom: 2em;
+}
+
+section.normal {
+    background-color: white; /*Cor de Fundo*/
+    color: black; /*Cor da fonte*/
+}
+
+section.imagem {
+    background-color: rgba(0, 0, 0, 0.664); /*Cor de fundo*/
+    color: white; /*Cor da fonte*/
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.342);
+    background-attachment: fixed;
+}
+
+section.imagem > p {
+    display: inline-block;
+    padding: 5px; /*Largura*/
+    background-color: rgba(0, 0, 0, 0.288); /*Cor de Fundo*/
+    text-shadow: 2px 2px 0px black;
+}
+
+section#img01 {
+    background-image: url('../imagens/background001.jpg');
+    background-position: right center;
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url('../imagens/background002.jpg');
+    background-size: cover;
+    background-position: right center;
+}
+
+footer {
+    background-color: rgba(0, 0, 0, 0.685); /*Cor de fundo*/
+    text-align: center; /*Centralização de Texto*/
+    color: white; /*Cor da Fonte*/
+    padding: 10px; /* Preenchimento*/
+}
+
